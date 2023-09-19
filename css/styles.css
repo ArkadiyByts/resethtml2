@@ -1,0 +1,45 @@
+/* font-family: 'DM Sans', sans-serif; */
+:root {
+  --logo-font: "Raleway", sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --primary-brand-color: #4d5ae5;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+
+.main-title {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 60px;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.sub-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.link {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 4%;
+    text-decoration: none;
+}
+
+.btn {
+    font-weight: 500;
+    letter-spacing: 4%;
+}
+
+.navigation {
+    font-weight: 500;
+}
