@@ -3,43 +3,163 @@
   --logo-font: "Raleway", sans-serif;
   --main-font: "Roboto", sans-serif;
   --primary-brand-color: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42; /*overlays/shadows/headings */
+  --success: #31D0AA; /*valid fields,success messages */
+  --text: #434455; /*body text*/
+  --subtle-text: #8E8F99; /*helper text*/
+  --accent: #E7E9FC; /*subtle bg,accent color,hairlines*/
+  --light: #F4F4FD; /*light mode bg/dialogs/alerts*/
+  --modal-overlay: #2E2F42; /*rgba needed*/
+  --hero-bg: #2E2F42; /*hero img bg*/
+  --white-bg: #FFFFFF; /*header/team card/bg*/
+  --modal-bg: #FCFCFC;
+}
+
+* {
+    color: var(--dark);
 }
 
 body {
-    font-family: var(--main-font);
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
 }
 
 .main-title {
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 60px;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 60px;
+  color: var(--white-bg);
 }
 
 .subtitle {
-    font-weight: bold;
-    font-size: 36px;
+  font-weight: bold;
+  font-size: 36px;
 }
 
 .sub-subtitle {
-    font-weight: 500;
-    font-size: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.4px;
 }
 
 .link {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 4%;
-    text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 4%;
+  text-decoration: none;
+}
+
+.list {
+    list-style: none;
 }
 
 .btn {
-    font-weight: 500;
-    letter-spacing: 4%;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .navigation {
-    font-weight: 500;
+  font-weight: 500;
+}
+
+.upper-logo,
+.down-logo {
+    font-family: var(--logo-font);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px /*116.667%*/;
+    letter-spacing: 0.54px;
+}
+
+.down-logo {
+    color: var(--light);
+}
+
+.logo-exception {
+    color: var(--primary-brand-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.mailtel:hover,
+.mailtel:focus {
+    color: var(--pressed-state);
+}
+
+.active-nav {
+    color: var(--pressed-state);
+}
+
+.mailtel {
+    color: var(--text);
+}
+
+.hero-sec {
+    background-color: var(--hero-bg);
+}
+
+.order-btn {
+    color: var(--white-bg);
+    background-color: var(--primary-brand-color);
+    border-style: none;
+    
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.panel-btn {
+    color: var(--primary-brand-color);
+    border: 1px solid var(--accent);
+    background-color: var(--light);
+}
+
+.order-btn:hover,
+.order-btn:focus {
+    background-color: var(--pressed-state);
+}
+
+.panel-btn:hover,
+.panel-btn:focus {
+    color: var(--white-bg);
+    border-color: var(--pressed-state);
+    background-color: var(--pressed-state);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.small-article {
+    color: var(--text);
+    
+}
+
+.position-descr,
+.card-descr {
+    color: var(--text);
+    letter-spacing: 0.32px;
+}
+
+.footer-article {
+    color: var(--light);
+    letter-spacing: 0.32px;
+    
+}
+
+.header {
+    border-bottom: 1px solid var(--accent);
+    
+}
+
+.team-sec {
+    background-color: var(--light);
+}
+
+.footer {
+    background-color: var(--hero-bg);
+}
+
+.card {
+    border: 1px solid var(--accent);
 }
